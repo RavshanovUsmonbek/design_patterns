@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class IClient(ABC):
     @abstractmethod
     def request(self):
@@ -9,7 +10,6 @@ class IClient(ABC):
 class Client(IClient):
     def request(self) -> str:
         return "Some function"
-
 
 
 class Adaptee:
